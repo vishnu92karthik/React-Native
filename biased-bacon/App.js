@@ -4,10 +4,23 @@ import { View, Text, StyleSheet } from 'react-native';
 const Profile = ({ name, status }) => {
 
     return (
+       
+        <SafeAreaView>
+    <View >
+    <Text
+    numberOfLines= {1}
+    ellipsizeMode = "clip"
+    >this is very pleasent mornigng good morning cishnu so 
+    woke up early 
+    </Text>
+    </View>
+    </ SafeAreaView>
+        <View >
         <View>
             <Text>Vishnu is a bodyBuilder</Text>
             <Text>{name}</Text>
             <Text>{status}</Text>
+
         </View>
     )
 }
@@ -19,6 +32,12 @@ function App() {
         {id:"1",task:"eat"},
         {id:"2",task:"sleep"},
         {id:"3",task:"code"},
+      ]
+      const data = [
+        {id:"1",title:"first -item"},
+        {id:"2",title:"SECOND -item"},
+        {id:"3",title:"third -item"},
+        {id:"4",title:"fourth -item"}
       ]
       const RenderItem = ()=>{
         return  myarr.map(item=>{
@@ -32,7 +51,16 @@ function App() {
             {
       name ? <Text>{name}</Text> : <Text>No name</Text>
     }
+     <Text>flatList...</Text>
+   <FlatList 
+   data = {data}
+   renderItem = {({item})=>{
+     return <Text>{item.title}</Text>
+   }}
+   />
         </View>
+          <TouchableOpacity><Image  source={require('./assets/snack-icon.png')} style={{height:100,width:100}}/> </TouchableOpacity>
+          // <Image source= {{uri:"https://images.unsplash.com/photo-1625059980424-729807dd4310?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"}} />
         {
             myarr.map(item=>{
               return <Text>{item.task}</Text>})
@@ -52,7 +80,8 @@ function App() {
       }
     }
     
-
+   
+  
 
 // const styles = StyleSheet.create({
 //   myview:{
