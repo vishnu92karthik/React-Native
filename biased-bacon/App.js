@@ -13,6 +13,7 @@ const Profile = ({ name, status }) => {
 }
 
 function App() {
+    const  [name, setName] = useState("vishnu");
     let name = ""
     let myarr = [
         {id:"1",task:"eat"},
@@ -39,8 +40,19 @@ function App() {
           <RenderItem />
           <RenderItem />
           <RenderItem />
-    )
-}
+          {
+   name ? <Text>{name}</Text>:<Text>no name</Text>
+    }
+    <Button 
+    title="click"
+    color="blueviolet"
+    onPress={
+      ()=>{
+        setName("karthik")
+      }
+    }
+    
+
 
 // const styles = StyleSheet.create({
 //   myview:{
