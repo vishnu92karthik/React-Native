@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {View,Text,StyleSheet,Button,SafeAreaView,Image,TouchableOpacity,FlatList,ScrollView} from 'react-native';
 
 const Profile = ({ name, status }) => {
 
@@ -44,6 +44,24 @@ function App() {
             return <Text>{item.task}</Text>})
       }
     return (
+        <ScrollView>
+        <View>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+         <Text style={{height:60,fontSize:20, backgroundColor:'pink',textAlign:"center",paddingTop:15,borderBottomWidth:1}}>flatList...</Text>
+        
+         </View>
+         </ScrollView>
         <View >
             <Profile name="karthik" status="single" />
             <Profile name="vishnu" status="programmer" />
