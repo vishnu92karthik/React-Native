@@ -1,8 +1,9 @@
 import React from 'react';
 import {View,Text,StyleSheet,Button,SafeAreaView,Image,TouchableOpacity,FlatList,ScrollView} from 'react-native';
 
+function App(){
 const Profile = ({ name, status }) => {
-
+  const [Iset,setItext] = useState("")
     return (
        
         <SafeAreaView>
@@ -20,7 +21,11 @@ const Profile = ({ name, status }) => {
             <Text>Vishnu is a bodyBuilder</Text>
             <Text>{name}</Text>
             <Text>{status}</Text>
-
+            <Text> text input </Text>
+  value = {Iset}
+  <TextInput placeholder="Type a value" style={{height:50, borderWidth:2}}
+  onChangeText= {(text)=>{setItext(text)}}/>
+  <Button title="prss me" onPress={()=>{document.write(Iset)}}/> 
         </View>
     )
 }
