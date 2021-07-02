@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,Text,StyleSheet,Button,SafeAreaView,Image,TouchableOpacity,FlatList,ScrollView} from 'react-native';
+import {View,Text,StyleSheet,Button,SafeAreaView,Image,TouchableOpacity,FlatList,ScrollView,ActivityIndicator} from 'react-native';
 
 function App(){
 const Profile = ({ name, status }) => {
